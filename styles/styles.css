@@ -1,0 +1,107 @@
+/* Estilo geral do corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte do texto */
+  background-color: #f4f4f4;      /* Cor de fundo da página */
+  margin: 0;                      /* Remove margens externas */
+  padding: 20px;                  /* Adiciona espaçamento interno */
+}
+
+/* Container principal do formulário */
+.container {
+  background: white;                             /* Fundo branco */
+  max-width: 500px;                              /* Largura máxima */
+  margin: 0 auto;                                /* Centraliza na página */
+  padding: 20px;                                 /* Espaçamento interno */
+  border-radius: 12px;                           /* Cantos arredondados */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);          /* Sombra leve ao redor */
+}
+
+/* Estilo da imagem/logo */
+.logo {
+  display: block;               /* Faz a imagem se comportar como bloco */
+  max-width: 200px;            /* Largura máxima da logo */
+  margin: 0 auto 20px;         /* Centraliza horizontalmente e dá espaço abaixo */
+  border-radius: 10%;          /* Arredonda um pouco a imagem */
+}
+
+/* Estilo das labels dos campos do formulário */
+form label {
+  display: block;            /* Ocupa uma linha inteira */
+  margin-top: 15px;          /* Espaço acima do label */
+  margin-bottom: 5px;        /* Espaço abaixo do label */
+  font-weight: bold;         /* Texto em negrito */
+  color: #0e0a0a;            /* Cor do texto (quase preto) */
+}
+
+/* Estilos para os inputs de texto e textarea */
+input[type="text"],
+textarea {
+  width: 100%;               /* Ocupa toda a largura disponível */
+  padding: 8px;              /* Espaço interno */
+  border-radius: 5px;        /* Cantos arredondados */
+  border: 1px solid #ccc;    /* Borda cinza clara */
+  box-sizing: border-box;    /* Inclui padding e borda na largura total */
+}
+
+/* Mesma regra aplicada novamente para todos os inputs e textarea (pode remover o duplicado se quiser) */
+form input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;           /* Tamanho da fonte */
+  display: block;            /* Faz com que cada campo fique em uma linha */
+  margin-bottom: 10px;   
+  resize: none;    /* Espaço abaixo de cada campo */
+}
+
+#mensagem{
+  height: 120px;
+}
+
+/* Estilo da área de estrelas de avaliação (rating) */
+.nota {
+  direction: rtl;               /* Inverte a direção para selecionar da direita para a esquerda */
+  display: flex;                /* Usa flexbox para alinhar os elementos */
+  justify-content: flex-start; /* Alinha à esquerda */
+}
+
+/* Esconde os inputs de radio (as estrelas reais) */
+.nota input[type="radio"] {
+  display: none;
+}
+
+/* Estilo visual das estrelas */
+.nota label {
+  font-size: 24px;        /* Tamanho das estrelas */
+  color: rgb(75, 75, 75); /* Cor padrão (cinza escuro) */
+  cursor: pointer;        /* Mostra o ponteiro ao passar por cima */
+  transition: 0.2s;       /* Suaviza mudanças de cor */
+}
+
+/* Estilo das estrelas quando selecionadas ou em hover */
+.nota input:checked ~ label,
+.nota label:hover,
+.nota label:hover ~ label {
+  color: gold; /* Cor dourada para destacar estrelas selecionadas ou em foco */
+}
+
+/* Botão de envio do formulário */
+button[type="submit"] {
+  margin-top: 20px;         /* Espaço acima do botão */
+  width: 100%;              /* Ocupa toda a largura */
+  padding: 10px;            /* Espaçamento interno */
+  background-color: #0077cc;/* Azul */
+  color: white;             /* Texto branco */
+  border: none;             /* Sem borda */
+  border-radius: 5px;       /* Cantos arredondados */
+  cursor: pointer;          /* Muda cursor ao passar por cima */
+  font-size: 16px;          /* Tamanho da fonte */
+}
+
+/* Estilo do botão quando o usuário passa o mouse por cima */
+button[type="submit"]:hover {
+  background-color: #005fa3; /* Azul mais escuro ao passar o mouse */
+}
