@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="shortcut icon" href="./assets/E.ico">
+  <title>Escuta Cidadã</title>
+</head>
+<body>
+
+ <!-- Logotipo da aplicação -->
+        <img src="./assets/Logo Escuta Cidadã.png" alt="Logo Escuta Cidadã" class="logo">
+
+  <div class="container"> <!-- Container principal -->
+
+
+        <!-- Início do formulário de feedback -->
+        <form id="feedback">
+
+            <!-- Campo: Nome do usuário -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+
+            <!-- Campo: E-mail -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
+
+            <!-- Campo: Telefone  -->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" />
+
+            <!-- Campo: Empresa de transporte -->
+            <label for="empresa">Qual empresa:</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Digite a empresa" />
+
+            <!-- Campo: Linha de transporte -->
+            <label for="linha">Qual linha:</label>
+            <input type="number" id="linha" name="linha" placeholder="Digite a linha" />
+
+            <!-- Campo: Horário de uso do transporte -->
+            <label for="horario">Qual horário:</label>
+            <input type="time" id="horario" name="horario" placeholder="Digite o horário" />
+
+            <!-- Campo: Data do uso do transporte-->
+            <label for="data">Qual a data:</label>
+            <input type="date" id="data" name="data" placeholder="Digite o horário" />
+
+            <!-- Campo: Avaliação do transporte (sistema de estrelas) -->
+            <label for="nota-transporte">Avaliação do transporte (1 a 5 estrelas):</label>
+            <div class="nota" id="avtrasnport">
+            <input type="radio" name="avtrasnport" id="transporte5" value="5">
+            <label for="transporte5">★</label>
+
+            <input type="radio" name="avtrasnport" id="transporte4" value="4">
+            <label for="transporte4">★</label>
+
+            <input type="radio" name="avtrasnport" id="transporte3" value="3">
+            <label for="transporte3">★</label>
+
+            <input type="radio" name="avtrasnport" id="transporte2" value="2">
+            <label for="transporte2">★</label>
+
+            <input type="radio" name="avtrasnport" id="transporte1" value="1">
+            <label for="transporte1">★</label>
+            </div>
+
+
+            <!-- Campo: Comentários -->
+            <label for="comentarios">Comentários / Reclamações:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui..."></textarea>
+
+            <!-- Campo: Avaliação do site  -->
+            <label for="nota-site">Avalie nosso site (1 a 5 estrelas):</label>
+            <div class="nota" id="avsite">
+            <input type="radio" name="avsite" id="site5" value="5">
+            <label for="site5">★</label>
+
+            <input type="radio" name="avsite" id="site4" value="4">
+            <label for="site4">★</label>
+
+            <input type="radio" name="avsite" id="site3" value="3">
+            <label for="site3">★</label>
+
+            <input type="radio" name="avsite" id="site2" value="2">
+            <label for="site2">★</label>
+
+            <input type="radio" name="avsite" id="site1" value="1">
+            <label for="site1">★</label>
+            </div>
+
+
+            <!-- Botão de envio do formulário -->
+            <button type="submit">Enviar Feedback</button>
+
+        </form> <!-- Fim do formulário -->
+
+    </div> <!-- Fim do container principal -->
+</body>
+</html>
+
+<script src="/java/scripts.js"></script>
