@@ -22,11 +22,30 @@
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
 
-            <!-- Campo: E-mail (label está como Telefone, e placeholder está incorreto) -->
+            <!-- Campo: E-mail  -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
 
-            <!-- Campo: Telefone (label e placeholder trocados) -->
+            <!--Campo para Selecionar o genero -->
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero">
+            <option value="" disabled selected hidden>Selecione o gênero</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+          </select>
+
+          <label for="idade">Idade:</label>
+            <select id="idade" name="idade">
+            <option value="" disabled selected hidden>Selecione sua faixa etária</option>
+            <option value="18-25">18 a 25</option>
+            <option value="25-40">25 a 40</option>
+            <option value="40-60">40 a 60</option>
+            <option value="61+">61 ou mais</option>
+
+          </select>
+          
+            <!-- Campo: Telefone  -->
             <label for="telefone">Telefone:</label>
             <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" />
 
@@ -42,7 +61,7 @@
             <label for="horario">Qual horário:</label>
             <input type="time" id="horario" name="horario" placeholder="Digite o horário" />
 
-            <!-- Campo: Data do uso do transporte (reutiliza o mesmo ID 'horario', o que deve ser corrigido) -->
+            <!-- Campo: Data do uso do transporte  -->
             <label for="data">Qual a data:</label>
             <input type="date" id="data" name="data" placeholder="Digite o horário" />
 
@@ -70,7 +89,7 @@
             <label for="comentarios">Comentários / Reclamações:</label>
             <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui..."></textarea>
 
-            <!-- Campo: Avaliação do site (repetição do campo de estrelas anterior, podendo confundir) -->
+            <!-- Campo: Avaliação do site (sistema de estrelas)-->
             <label for="nota-site">Avalie nosso site (1 a 5 estrelas):</label>
             <div class="nota" id="avsite">
             <input type="radio" name="avsite" id="site5" value="5">
