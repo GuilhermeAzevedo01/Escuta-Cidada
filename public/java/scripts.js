@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Atualiza o valor do input com a formatação aplicada
     e.target.value = valor;
   });
+  
 
   // Seleciona o formulário pelo id 'feedback' e adiciona um evento ao enviar o formulário
   document.getElementById('feedback').addEventListener('submit', async function (e) {
@@ -34,6 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const data = {
       nome: document.getElementById('nome').value,                  // valor do input nome
       email: document.getElementById('email').value,                // valor do input email
+      genero: document.getElementById("genero").value,              // valor do select genero
+      idade: document.getElementById("idade").value,                // valor do select idade
       telefone: document.getElementById('telefone').value,          // valor do input telefone
       empresa: document.getElementById('empresa').value,            // valor do input empresa
       linha: document.getElementById('linha').value,                // valor do input linha
@@ -50,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     try {
       // Envia os dados para a API via método POST, convertendo o objeto data para JSON
-      const response = await fetch("http://127.0.0.1:8000/api/feedback/", {
+      const response = await fetch("https://escuta-cidada-back.onrender.com/api/feedback/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json", // Especifica que o corpo da requisição está em JSON
