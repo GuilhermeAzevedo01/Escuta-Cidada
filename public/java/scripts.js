@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Se a resposta da API for sucesso (status 200-299)
       if (response.ok) {
-        alert("Feedback enviado com sucesso!");  // Mostra mensagem de sucesso para o usuário
+        alert("Obrigado pela sua contribuição!");  // Mostra mensagem de sucesso para o usuário
         document.getElementById("feedback").reset();  // Limpa o formulário para novos dados
       } else {
         alert("Erro ao enviar feedback.");  // Mostra mensagem de erro se resposta da API não for ok
