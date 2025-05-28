@@ -4,6 +4,7 @@ body {
   background-color: #f4f4f4;      /* Cor de fundo da página */
   margin: 0;                      /* Remove margens externas */
   padding: 20px;                  /* Adiciona espaçamento interno */
+   font-family: "Poppins", sans-serif;
 }
 
 /* Container principal do formulário */
