@@ -35,10 +35,14 @@
             <!-- Campo: Nome do usuário -->
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+            <div id="erro-nome" class="mensagem-erro">Este campo é obrigatório</div>
+
 
             <!-- Campo: E-mail  -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
+            <div id="erro-email" class="mensagem-erro">Este campo é obrigatório</div>
+
 
             <!--Campo para Selecionar o genero -->
             <label for="genero">Gênero:</label>
@@ -48,6 +52,8 @@
             <option value="feminino">Feminino</option>
             <option value="outro">Outro</option>
           </select>
+          <div id="erro-genero" class="mensagem-erro">Este campo é obrigatório</div>
+
 
           <label for="idade">Idade:</label>
             <select id="idade" name="idade">
@@ -58,26 +64,38 @@
             <option value="61+">61 ou mais</option>
 
           </select>
+          <div id="erro-idade" class="mensagem-erro">Este campo é obrigatório</div>
           
+
             <!-- Campo: Telefone  -->
             <label for="telefone">Telefone:</label>
             <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" />
+            <div id="erro-telefone" class="mensagem-erro">Este campo é obrigatório</div>
+
 
             <!-- Campo: Empresa de transporte -->
             <label for="empresa">Qual empresa:</label>
             <input type="text" id="empresa" name="empresa" placeholder="Digite a empresa" />
+            <div id="erro-empresa" class="mensagem-erro">Este campo é obrigatório</div>
+
 
             <!-- Campo: Linha de transporte -->
             <label for="linha">Qual linha:</label>
             <input type="number" id="linha" name="linha" placeholder="Digite a linha" />
+            <div id="erro-linha" class="mensagem-erro">Este campo é obrigatório</div>
+
 
             <!-- Campo: Horário de uso do transporte -->
             <label for="horario">Qual horário:</label>
             <input type="time" id="horario" name="horario" placeholder="Digite o horário" />
+            <div id="erro-horario" class="mensagem-erro">Por favor, selecione um horário</div>
+
 
             <!-- Campo: Data do uso do transporte  -->
             <label for="data">Qual a data:</label>
             <input type="date" id="data" name="data" placeholder="Digite o horário" />
+            <div id="erro-data" class="mensagem-erro">Por favor, selecione uma data</div>
+
 
             <!-- Campo: Avaliação do transporte (sistema de estrelas) -->
             <label for="nota-transporte">Avaliação do transporte (1 a 5 estrelas):</label>
@@ -102,6 +120,8 @@
             <!-- Campo: Comentários -->
             <label for="comentarios">Comentários / Reclamações:</label>
             <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui..."></textarea>
+            <div id="erro-mensagem" class="mensagem-erro">Preencha o campo de comentário</div>
+
 
             <!-- Campo: Avaliação do site (sistema de estrelas)-->
             <label for="nota-site">Avalie nosso site (1 a 5 estrelas):</label>
