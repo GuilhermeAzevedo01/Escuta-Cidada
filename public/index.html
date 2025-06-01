@@ -81,8 +81,13 @@
 
             <!-- Campo: Linha de transporte -->
             <label for="linha">Qual linha:</label>
-            <input type="number" id="linha" name="linha" placeholder="Digite a linha" />
+            <input type="text" id="linha" name="linha" placeholder="Ex:numero/nome" />
             <div id="erro-linha" class="mensagem-erro">Este campo é obrigatório</div>
+
+
+            <label for="numberbus">Qual numero do ônibus:</label>
+            <input type="number" id="numberbus" name="numberbus" placeholder="Digite o numero" />
+            <div id="erro-numberbus" class="mensagem-erro">Este campo é obrigatório</div>
 
 
             <!-- Campo: Horário de uso do transporte -->
@@ -94,7 +99,7 @@
             <!-- Campo: Data do uso do transporte  -->
             <label for="data">Qual a data:</label>
             <input type="date" id="data" name="data" placeholder="Digite o horário" />
-            <div id="erro-data" class="mensagem-erro">Por favor, selecione uma data</div>
+            <div id="erro-dataH" class="mensagem-erro">Por favor, selecione uma data</div>
 
 
             <!-- Campo: Avaliação do transporte (sistema de estrelas) -->
