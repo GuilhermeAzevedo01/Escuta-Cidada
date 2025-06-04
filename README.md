@@ -2,6 +2,12 @@
 
 Este repositório contém a parte de frontend da aplicação **Escuta Cidadã** responsável pela interface web/mobile.
 
+## Descrição
+
+O projeto Escuta Cidadã está sendo desenvolvido para facilitar a comunicação entre a população e os órgãos responsáveis, criando um canal direto para o registro de experiências, denúncias e sugestões relacionadas à mobilidade urbana. Além disso, a aplicação busca identificar e organizar os dados de forma estruturada e com maior agilidade.
+Pensada para ser acessível, intuitiva e funcional, a plataforma atenderá diretamente os usuários do transporte público. Com essas informações, espera-se contribuir para que os órgãos responsáveis possam agir de forma mais eficiente na resolução de problemas e na melhoria do serviço
+
+
 ## Tecnologias Utilizadas
 
 - **JavaScript**
