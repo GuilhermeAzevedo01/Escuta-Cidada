@@ -9,6 +9,14 @@ Este repositório contém a parte de frontend da aplicação **Escuta Cidadã** 
 - **CSS**
 - **Firebase Hosting**
 
+## 🚀 O projeto já está hospedado e funcionando online
+
+Você pode acessar a aplicação diretamente pelo link abaixo, sem necessidade de instalação local:
+
+🔗 [Acessar Escuta Cidadã](https://escuta-cidada.web.app/)
+
+---
+
 ## Como Rodar o Projeto Localmente
 
 Para rodar o projeto *Escuta Cidadã* (front-end) no seu computador, siga os passos abaixo.
