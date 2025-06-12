@@ -31,16 +31,18 @@ Para rodar o projeto *Escuta Cidadã* (front-end) no seu computador, siga os pas
 
 Primeiro, clone o repositório para a sua máquina local usando o Git. Abra o terminal e execute o comando:
 
+```bash
 git clone https://github.com/GuilhermeAzevedo01/Escuta-Cidada.git
+```
 
 Isso criará uma cópia local do repositório no seu computador.
 
 ### 2. Navegar até o Diretório do Projeto
 
 Após clonar o repositório, navegue até o diretório do projeto:
-
+```bash
 cd Escuta-Cidada
-
+```
 ### 3. Rodar o Projeto Localmente
 
 O projeto é composto por arquivos estáticos (HTML, CSS, e JavaScript), então, para rodá-lo localmente, basta abrir o arquivo `index.html` diretamente no seu navegador de preferência.
